@@ -88,7 +88,7 @@ class scheduler:
             exit(1)
 
         num_instructions, chance_cpu = int(tmp[0]), float(tmp[1])/100.0
-        for i in range(num_instructions):
+        for _ in range(num_instructions):
             if random.random() < chance_cpu:
                 self.proc_info[proc_id][PROC_CODE].append(DO_COMPUTE)
             else:
@@ -293,6 +293,7 @@ parser.add_option('-I', '--iodone', default='IO_RUN_LATER', help='type of behavi
 parser.add_option('-c', help='compute answers for me', action='store_true', default=False, dest='solve')
 parser.add_option('-p', '--printstats', help='print statistics at end; only useful with -c flag (otherwise stats are not printed)', action='store_true', default=False, dest='print_stats')
 (options, args) = parser.parse_args()
+# If you enter only "-h" as the command line argument, the following line will not be reached
 
 random_seed(options.seed)
 
