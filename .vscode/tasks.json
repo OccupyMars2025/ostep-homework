@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build with clang",
+        "type": "shell",
+        "command": "/usr/bin/clang-18",   // Change to "clang" for C programs
+        "args": [
+          "-g",  // Enables debugging information
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Build with Clang"
+      }
+    ]
+  }
+  

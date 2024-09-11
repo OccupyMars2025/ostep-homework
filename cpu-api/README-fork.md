@@ -25,6 +25,9 @@ homework.
 
 Here is a simple example:
 ```sh
+prompt> ./fork.py -h
+
+
 prompt> ./fork.py -s 4
 
                            Process Tree:

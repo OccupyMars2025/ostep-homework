@@ -1,0 +1,2 @@
+fd = 1, STDOUT_FILENO = 1
+This output will go to the file 'output.txt'
