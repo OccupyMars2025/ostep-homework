@@ -16,6 +16,7 @@ prompt> ./scheduler.py -p FIFO -j 3 -s 100
 ```
 
 If that doesn't work, try this:
+
 ```sh
 prompt> python ./scheduler.py -p FIFO -j 3 -s 100
 ```
@@ -120,7 +121,7 @@ the jobs lengths are taken from your comma-separated list.
 Of course, more interesting things happen when you use SJF (shortest-job
 first) or even RR (round robin) schedulers. Try them and see!
 
-And you can always run 
+And you can always run
 
 ```sh
 prompt> ./scheduler.py -h
